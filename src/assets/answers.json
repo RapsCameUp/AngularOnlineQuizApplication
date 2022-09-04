@@ -1,0 +1,16 @@
+{
+    "answers":[
+        {
+            "id":1,
+            "correctAnswer":"9"
+        },
+        {
+            "id":2,
+            "correctAnswer":"42.5"
+        },
+        {
+            "id":3,
+            "correctAnswer":"3"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+<header class="p-2 bg-dark text-white">
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" style="font-weight: bold;">
+                R-A-P-S <i class="fas fa-cubes" style="margin-left: 10px;color: cyan;"></i>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="margin-left: 40px;">
+                <li><a routerLink="/main" class="nav-link px-2 text-white">Home</a></li>
+                <li><a routerLink="/about" class="nav-link px-2 text-white">About</a></li>
+                <li><a routerLink="/contact" class="nav-link px-2 text-white">Contact</a></li>
+            </ul>
+
+            <div class="text-end">
+                <small class="text-muted">{{Email}}</small>
+                <a type="button" routerLink="logout" style="margin-left: 15px;" class="btn btn-outline-light me-2">Logout</a>
+            </div>
+        </div>
+    </div>
+</header>

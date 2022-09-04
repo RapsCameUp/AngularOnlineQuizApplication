@@ -1,0 +1,28 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "question":"Which number is equivalent to 3^(4)÷3^(2)",
+            "option1":"3",
+            "option2":"9",
+            "option3":"64",
+            "option4":"26"
+        },
+        {
+            "id":2,
+            "question":"There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete",
+            "option1":"42.5",
+            "option2":"39.2",
+            "option3":"96.1",
+            "option4":"14.3"
+        },
+        {
+            "id":3,
+            "question":"If 1 = 3, 2 = 3, 3 = 5, 4 = 4, 5 = 4 Then, 6= ",
+            "option1":"18",
+            "option2":"3",
+            "option3":"6",
+            "option4":"7"
+        }
+    ]
+}

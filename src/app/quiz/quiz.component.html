@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div *ngIf="display1">
+            <div *ngFor="let q of questions">
+                <div class="offset-sm-1 col-sm-10 mb-3">
+                    <div class="card bg-dark">
+                        <div class="card-body text-white">
+                            <h6>{{q.id}} ) {{q.question}} ?</h6>
+                            <div class="mt-1" style="margin-left: 15px;">
+                                <input class="form-check-input" type="radio" name={{q.id}} value={{q.option1}}
+                                    (click)="UserAnswers(q.id,q.option1)" />{{q.option1}}
+                                <br>
+                                <input class="form-check-input" type="radio" name={{q.id}} value={{q.option2}}
+                                    (click)="UserAnswers(q.id,q.option2)" />{{q.option2}}
+                                <br>
+                                <input class="form-check-input" type="radio" name={{q.id}} value={{q.option3}}
+                                    (click)="UserAnswers(q.id,q.option3)" />{{q.option3}}
+                                <br>
+                                <input class="form-check-input" type="radio" name={{q.id}} value={{q.option4}}
+                                    (click)="UserAnswers(q.id,q.option4)" />{{q.option4}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-sm-1 col-sm-10 mb-3">
+                <input class="btn btn-info w-100" type="button" value="Submit Test" (click)="submitTest()"/>
+            </div>
+        </div>
+
+        <div *ngIf="display2">
+            <div class="offset-sm-1 col-sm-10 mb-4">
+                <div class="card bg-dark">
+                    <div class="card-body text-white">
+                        <a class="btn btn-info" type="button" (click)="UserTestReview()">Review Test</a>
+                        <a style="margin-left: 20px;" class="btn btn-warning" type="button" (click)="userTestResults()"> View Your Results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="display3">
+            <div class="offset-sm-1 col-sm-10 mb-4">
+                <div class="card bg-dark">
+                    <div class="card-body text-white">
+                        <div *ngFor="let answer of quizAnswer.entries()">
+                            <span class="mb-2">{{answer}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="display4">
+            <div class="offset-sm-1 col-sm-10">
+                <div class="card bg-dark">
+                    <div class="card-body text-white">
+                        You test results are: {{count}} out of {{questions.length}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
